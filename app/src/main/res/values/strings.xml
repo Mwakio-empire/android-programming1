@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Mykey</string>
+    <string name="title_activity_layout">layout</string>
+    <string name="title_activity_intent">intentActivity</string>
+</resources>
