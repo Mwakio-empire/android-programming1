@@ -13,8 +13,10 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Call
 import androidx.compose.material.icons.filled.Email
@@ -68,6 +70,11 @@ fun Form( ) {
                 painterResource(id = R.drawable.background),
                 contentScale = ContentScale.FillBounds
             )
+
+            //scrolling for columns
+            .verticalScroll(rememberScrollState())
+            //end of scrolling for columns
+
     ) {
         var firstname by remember { mutableStateOf("") }
         var lastname by remember { mutableStateOf("") }
@@ -151,14 +158,32 @@ fun Form( ) {
         )
         Spacer(modifier = Modifier.height(20.dp))
 
-        Button(onClick = { /*TODO*/ },
-            shape = RoundedCornerShape(5.dp),
-            colors = ButtonDefaults.buttonColors(Color.Red), modifier = Modifier
+        Box(modifier = Modifier.fillMaxWidth(), contentAlignment = Alignment.Center){
+            Button(onClick = { /*TODO*/ },
+                shape = RoundedCornerShape(5.dp),
+                colors = ButtonDefaults.buttonColors(Color.Red), modifier = Modifier
 
-                .padding(start = 30.dp, end = 30.dp)
-        ){
-            Text(text = "Register")
+                    .padding(start = 30.dp, end = 30.dp)
+                    .fillMaxWidth()
+            ){
+                Text(text = "Register")
+            }
+
         }
+
+        Spacer(modifier = Modifier.height(20.dp))
+
+           androidx.compose.material3.Text(text = "Already have an account? Log in", color = Color.White,
+            fontSize = 24.sp,
+            modifier = Modifier
+                .fillMaxWidth()
+
+                .height(30.dp) ,
+            fontWeight = FontWeight.ExtraLight,
+            textAlign = TextAlign.Center,
+            textDecoration = TextDecoration.Underline)
+
+
 
 
 
