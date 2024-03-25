@@ -132,7 +132,7 @@ fun   MyIntents(){
         //START OF SMS
 
         OutlinedButton(onClick = {   val smsIntent=Intent(Intent.ACTION_SENDTO)
-            smsIntent.data="smsto:0720245837".toUri()
+            smsIntent.data="smsto:0714819427".toUri()
             smsIntent.putExtra("sms_body","Hello Glory,how was your day?")
             mContext.startActivity(smsIntent)},
             modifier = Modifier
@@ -151,7 +151,7 @@ fun   MyIntents(){
         //START OF CALL
 
         OutlinedButton(onClick = { val callIntent=Intent(Intent.ACTION_DIAL)
-            callIntent.data="tel:0720245837".toUri()
+            callIntent.data="tel:0714819427".toUri()
             mContext.startActivity(callIntent) },
             modifier = Modifier
                 .fillMaxWidth()
