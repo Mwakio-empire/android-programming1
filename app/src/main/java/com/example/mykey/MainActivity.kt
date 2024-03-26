@@ -103,8 +103,8 @@ fun Text(){
 
         Box(modifier = Modifier.fillMaxWidth(),
             contentAlignment = Alignment.Center){
-            Button(onClick = { /*TODO*/ }) {
-                androidx.compose.material3.Text(text = "See more")
+            Button(onClick = {  mContext.startActivity(Intent(mContext,DestinationActivity::class.java)) }) {
+                androidx.compose.material3.Text(text = "Destination")
             }
         }
         Divider()
