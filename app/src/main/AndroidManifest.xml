@@ -13,6 +13,16 @@
         android:theme="@style/Theme.Mykey"
         tools:targetApi="31">
         <activity
+            android:name=".AssignmentActivity"
+            android:exported="false"
+            android:label="@string/title_activity_assignment"
+            android:theme="@style/Theme.Mykey" />
+        <activity
+            android:name=".ExplorerActivity"
+            android:exported="false"
+            android:label="@string/title_activity_explorer"
+            android:theme="@style/Theme.Mykey" />
+        <activity
             android:name=".DestinationActivity"
             android:exported="false"
             android:label="@string/title_activity_destination"
