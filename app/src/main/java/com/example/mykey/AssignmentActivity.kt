@@ -59,7 +59,7 @@ fun Assign () {
                 .fillMaxWidth(),
             horizontalArrangement = Arrangement.Center
         ) {
-            Image(painter = painterResource(id = R.drawable.china),
+            Image(painter = painterResource(id = R.drawable.paw),
                 contentDescription ="woof" ,
                 modifier = Modifier.size(90.dp))
 
@@ -68,6 +68,7 @@ fun Assign () {
                 fontSize = 50.sp ,
                 fontWeight = FontWeight.Bold,
                 modifier = Modifier.padding(top = 20.dp)
+                    
             )
         }
 // End of Row-top
@@ -82,7 +83,7 @@ fun Assign () {
                 .background(androidx.compose.ui.graphics.Color.Gray)
 
         ){
-            Image(painter = painterResource(id = R.drawable.usa),
+            Image(painter = painterResource(id = R.drawable.dog1),
                 contentDescription = "image 1",
                 modifier = Modifier
                     .size(70.dp)
@@ -122,7 +123,7 @@ fun Assign () {
                 .background(androidx.compose.ui.graphics.Color.Gray)
 
         ){
-            Image(painter = painterResource(id = R.drawable.usa),
+            Image(painter = painterResource(id = R.drawable.dog2),
                 contentDescription = "image 1",
                 modifier = Modifier
                     .size(70.dp)
@@ -134,7 +135,7 @@ fun Assign () {
 
             Column {
                 androidx.compose.material3.Text(
-                    text = "Koda" ,
+                    text = "Lola" ,
                     fontSize = 20.sp ,
                     fontFamily = FontFamily.Cursive ,
                     fontWeight = FontWeight.ExtraBold
@@ -163,7 +164,7 @@ fun Assign () {
                 .background(androidx.compose.ui.graphics.Color.Gray)
 
         ){
-            Image(painter = painterResource(id = R.drawable.usa),
+            Image(painter = painterResource(id = R.drawable.dog3),
                 contentDescription = "image 1",
                 modifier = Modifier
                     .size(70.dp)
@@ -175,7 +176,7 @@ fun Assign () {
 
             Column {
                 androidx.compose.material3.Text(
-                    text = "Koda" ,
+                    text = "Frankie" ,
                     fontSize = 20.sp ,
                     fontFamily = FontFamily.Cursive ,
                     fontWeight = FontWeight.ExtraBold
@@ -203,7 +204,7 @@ fun Assign () {
                 .background(androidx.compose.ui.graphics.Color.Gray)
 
         ){
-            Image(painter = painterResource(id = R.drawable.usa),
+            Image(painter = painterResource(id = R.drawable.dog4),
                 contentDescription = "image 1",
                 modifier = Modifier
                     .size(70.dp)
@@ -215,7 +216,7 @@ fun Assign () {
 
             Column {
                 androidx.compose.material3.Text(
-                    text = "Koda" ,
+                    text = "Nox" ,
                     fontSize = 20.sp ,
                     fontFamily = FontFamily.Cursive ,
                     fontWeight = FontWeight.ExtraBold
@@ -232,6 +233,173 @@ fun Assign () {
 
         }
         //  Row4 end
+
+
+
+        Spacer(modifier = Modifier.height(15.dp))
+
+        // Row5
+        Row (
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(5.dp)
+                .background(androidx.compose.ui.graphics.Color.Gray)
+
+        ){
+            Image(painter = painterResource(id = R.drawable.dog5),
+                contentDescription = "image 1",
+                modifier = Modifier
+                    .size(70.dp)
+                    .padding(5.dp)
+                    .clip(shape = CircleShape),
+                contentScale = ContentScale.Crop
+            )
+            Spacer(modifier = Modifier.width(5.dp))
+
+            Column {
+                androidx.compose.material3.Text(
+                    text = "Faye" ,
+                    fontSize = 20.sp ,
+                    fontFamily = FontFamily.Cursive ,
+                    fontWeight = FontWeight.ExtraBold
+                )
+                Spacer(modifier = Modifier.height(5.dp))
+
+                androidx.compose.material3.Text(
+                    text = "2 years old" ,
+                    fontSize = 15.sp ,
+                    fontFamily = FontFamily.Serif
+                )
+
+            }
+
+        }
+        //  Row5 end
+
+
+
+        Spacer(modifier = Modifier.height(15.dp))
+
+        // Row6
+        Row (
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(5.dp)
+                .background(androidx.compose.ui.graphics.Color.Gray)
+
+        ){
+            Image(painter = painterResource(id = R.drawable.dog6),
+                contentDescription = "image 1",
+                modifier = Modifier
+                    .size(70.dp)
+                    .padding(5.dp)
+                    .clip(shape = CircleShape),
+                contentScale = ContentScale.Crop
+            )
+            Spacer(modifier = Modifier.width(5.dp))
+
+            Column {
+                androidx.compose.material3.Text(
+                    text = "Bella" ,
+                    fontSize = 20.sp ,
+                    fontFamily = FontFamily.Cursive ,
+                    fontWeight = FontWeight.ExtraBold
+                )
+                Spacer(modifier = Modifier.height(5.dp))
+
+                androidx.compose.material3.Text(
+                    text = "2 years old" ,
+                    fontSize = 15.sp ,
+                    fontFamily = FontFamily.Serif
+                )
+
+            }
+
+        }
+        //  Row6 end
+
+
+
+        Spacer(modifier = Modifier.height(15.dp))
+
+        // Row7
+        Row (
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(5.dp)
+                .background(androidx.compose.ui.graphics.Color.Gray)
+
+        ){
+            Image(painter = painterResource(id = R.drawable.dog7),
+                contentDescription = "image 1",
+                modifier = Modifier
+                    .size(70.dp)
+                    .padding(5.dp)
+                    .clip(shape = CircleShape),
+                contentScale = ContentScale.Crop
+            )
+            Spacer(modifier = Modifier.width(5.dp))
+
+            Column {
+                androidx.compose.material3.Text(
+                    text = "Moana" ,
+                    fontSize = 20.sp ,
+                    fontFamily = FontFamily.Cursive ,
+                    fontWeight = FontWeight.ExtraBold
+                )
+                Spacer(modifier = Modifier.height(5.dp))
+
+                androidx.compose.material3.Text(
+                    text = "2 years old" ,
+                    fontSize = 15.sp ,
+                    fontFamily = FontFamily.Serif
+                )
+
+            }
+
+        }
+        //  Row7 end
+
+
+        Spacer(modifier = Modifier.height(15.dp))
+
+        // Row8
+        Row (
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(5.dp)
+                .background(androidx.compose.ui.graphics.Color.Gray)
+
+        ){
+            Image(painter = painterResource(id = R.drawable.dog8),
+                contentDescription = "image 1",
+                modifier = Modifier
+                    .size(70.dp)
+                    .padding(5.dp)
+                    .clip(shape = CircleShape),
+                contentScale = ContentScale.Crop
+            )
+            Spacer(modifier = Modifier.width(5.dp))
+
+            Column {
+                androidx.compose.material3.Text(
+                    text = "Nox" ,
+                    fontSize = 20.sp ,
+                    fontFamily = FontFamily.Cursive ,
+                    fontWeight = FontWeight.ExtraBold
+                )
+                Spacer(modifier = Modifier.height(5.dp))
+
+                androidx.compose.material3.Text(
+                    text = "2 years old" ,
+                    fontSize = 15.sp ,
+                    fontFamily = FontFamily.Serif
+                )
+
+            }
+
+        }
+        //  Row8 end
 
 
 

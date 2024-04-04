@@ -6,4 +6,6 @@
     <string name="title_activity_destination">DestinationActivity</string>
     <string name="title_activity_explorer">ExplorerActivity</string>
     <string name="title_activity_assignment">AssignmentActivity</string>
+    <string name="title_activity_lotti">LottiActivity</string>
+    <string name="title_activity_splash">SplashActivity</string>
 </resources>

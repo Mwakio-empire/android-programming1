@@ -26,6 +26,7 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -42,6 +43,10 @@ import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.airbnb.lottie.compose.LottieAnimation
+import com.airbnb.lottie.compose.LottieCompositionSpec
+import com.airbnb.lottie.compose.animateLottieCompositionAsState
+import com.airbnb.lottie.compose.rememberLottieComposition
 import com.example.mykey.ui.theme.MykeyTheme
 
 class MainActivity : ComponentActivity() {
@@ -108,6 +113,8 @@ fun Text(){
             }
         }
         Divider()
+        Spacer(modifier = Modifier.height(20.dp))
+
 
         //centering an image
 
@@ -130,7 +137,7 @@ fun Text(){
 
         Button(
             onClick = {
-                      mContext.startActivity(Intent(mContext,LayoutActivity::class.java))
+                      mContext.startActivity(Intent(mContext,layout::class.java))
             },
             shape = RoundedCornerShape(5.dp),
             colors = ButtonDefaults.buttonColors(Color.Red), modifier = Modifier
@@ -141,7 +148,12 @@ fun Text(){
         }
 
 
+
     }
+
+    Spacer(modifier = Modifier.height(20.dp))
+
+
 
 }
 

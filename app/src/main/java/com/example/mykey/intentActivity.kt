@@ -46,7 +46,7 @@ import androidx.compose.ui.unit.sp
 import androidx.core.net.toUri
 import com.example.mykey.ui.theme.MykeyTheme
 
-class MyintentsActivity : ComponentActivity() {
+class intentActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
