@@ -8,4 +8,8 @@
     <string name="title_activity_assignment">AssignmentActivity</string>
     <string name="title_activity_lotti">LottiActivity</string>
     <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_choose">ChooseActivity</string>
+    <string name="title_activity_add_cart">AddCart</string>
+    <string name="title_activity_pay">PayActivity</string>
+    <string name="title_activity_items">ItemsActivity</string>
 </resources>

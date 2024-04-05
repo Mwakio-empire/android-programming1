@@ -46,7 +46,7 @@ class SplashActivity : ComponentActivity() {
             val mContext = LocalContext.current
             val coroutineScope = rememberCoroutineScope()
             coroutineScope.launch {
-                delay(1000)
+                delay(5000)
                 mContext.startActivity(Intent(mContext,MainActivity::class.java))
                 finish()
 
@@ -70,7 +70,7 @@ fun Splash(){
     ) {
 
         //Lottie Animation
-        val composition by rememberLottieComposition(spec = LottieCompositionSpec.RawRes(R.raw.gtp))
+        val composition by rememberLottieComposition(spec = LottieCompositionSpec.RawRes(R.raw.loading))
         val progress by animateLottieCompositionAsState(composition)
         LottieAnimation(composition, progress,
             modifier = Modifier.size(300.dp)
